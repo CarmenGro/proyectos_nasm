@@ -1,0 +1,6 @@
+nasm -f elf32 comparacion.asm -o comparacion.o
+ld -m elf_i386 -s -o comparacion comparacion.o
+./comparacion
+
+Salida esperada:
+El numero mayor es 7
