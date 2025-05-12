@@ -1,0 +1,6 @@
+nasm -f elf32 division.asm -o division.o
+ld -m elf_i386 -s -o division division.o
+./division
+
+Salida esperada:
+Resultado: 4
