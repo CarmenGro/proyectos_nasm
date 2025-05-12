@@ -1,0 +1,6 @@
+nasm -f elf32 contar_letras.asm -o contar_letras.o
+ld -m elf_i386 -s -o contar_letras contar_letras.o
+./contar_letras
+
+Salida esperada:
+La cadena tiene 10 letras.
