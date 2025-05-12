@@ -1,0 +1,7 @@
+nasm -f elf32 leer_numero.asm -o leer_numero.o
+ld -m elf_i386 -s -o leer_numero leer_numero.o
+./leer_numero
+
+Salida esperada:
+(espera a que escribas un número)
+Número ingresado: [el número que escribas]
