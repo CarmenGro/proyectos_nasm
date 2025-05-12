@@ -1,0 +1,8 @@
+nasm -f elf32 multiplicacion.asm -o multiplicacion.o
+ld -m elf_i386 -s -o multiplicacion multiplicacion.o
+./multiplicacion
+
+Salida esperada:
+Resultado: 12
+
+
