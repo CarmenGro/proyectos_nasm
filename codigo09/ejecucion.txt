@@ -1,0 +1,6 @@
+nasm -f elf32 numero_a_ascii.asm -o numero_a_ascii.o
+ld -m elf_i386 -s -o numero_a_ascii numero_a_ascii.o
+./numero_a_ascii
+
+Salida esperada:
+Caracter ASCII correspondiente: A
