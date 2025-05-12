@@ -1,0 +1,6 @@
+nasm -f elf32 resta.asm -o resta.o
+ld -m elf_i386 -s -o resta resta.o
+./resta
+
+Salida esperada:
+Resultado: 5
