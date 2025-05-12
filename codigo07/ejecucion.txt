@@ -1,0 +1,7 @@
+nasm -f elf32 mostrar_cadena.asm -o mostrar_cadena.o
+ld -m elf_i386 -s -o mostrar_cadena mostrar_cadena.o
+./mostrar_cadena
+
+Salida esperada:
+Hola
+
