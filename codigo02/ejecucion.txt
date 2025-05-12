@@ -1,0 +1,6 @@
+nasm -f elf32 suma.asm -o suma.o
+ld -m elf_i386 -s -o suma suma.o
+./suma
+
+Salida esperada:
+Resultado: 8
